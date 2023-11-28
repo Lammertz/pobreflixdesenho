@@ -25,6 +25,4 @@ function onPlayerReady(event) {
 var overlay = document.getElementById('overlay');
 
 function startVideo() {
-  var videoWrapper = document.querySelector('.video-wrapper');
-  videoWrapper.removeChild(overlay);
-}
+  var videoWrapper = document.querySelector
