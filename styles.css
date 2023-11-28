@@ -1,0 +1,89 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-screen {
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* Proporção de 16:9 (dividir a altura pelo comprimento) */
+  height: 0;
+}
+
+#player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.movie-covers-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Adicione ao seu arquivo de estilos (styles.css) */
+.video-wrapper {
+  position: relative;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent; /* Pode ajustar a cor de fundo conforme necessário */
+  pointer-events: none; /* Garante que o overlay não intercepte eventos de mouse */
+}
