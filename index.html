@@ -7,48 +7,20 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="disqus_thread"></div>
-
-<div class="header">
+  <div class="header">
     <h1>Meu Cinema 24 Horas</h1>
   </div>
   <div class="main">
     <div class="movie-screen">
-  <div class="overlay" onclick="startVideo()"></div>
-  <!-- Substitua este trecho com o código do seu vídeo -->
-<!-- Dentro da div com a classe "video-wrapper" -->
-<div class="video-wrapper">
-  <div id="overlay"></div>
-  <iframe width="727" height="409" src="https://www.youtube.com/embed/6sTEFDaswSA" title="🔴Os Simpsons Ao Vivo FULL HD 🌟 Simpsons 24 HORAS AO VIVO 💜#assistaemcasa #batendopapo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-
-</div>
-
-</div>
-
+      <div class="overlay" onclick="startVideo()"></div>
+      <!-- Substitua este trecho com o código do seu vídeo -->
+      <!-- Dentro da div com a classe "video-wrapper" -->
+      <div class="video-wrapper">
+        <div id="overlay"></div>
+        <iframe width="727" height="409" src="https://www.youtube.com/embed/6sTEFDaswSA" title="🔴Os Simpsons Ao Vivo FULL HD 🌟 Simpsons 24 HORAS AO VIVO 💜#assistaemcasa #batendopapo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
     </div>
-  <script>
-  /**
-   * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-   * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-   */
-  /*
-  var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-  };
-  */
-  (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://https-lammertz-github-io-pobreflixdesenho.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
     <div class="movie-covers-container" id="movieCovers">
-      
       <!-- Coloque suas imagens aqui -->
     </div>
   </div>
@@ -58,5 +30,8 @@
   <script src="https://www.youtube.com/iframe_api"></script>
   <script src="script.js"></script>
   <script id="dsq-count-scr" src="//https-lammertz-github-io-pobreflixdesenho.disqus.com/count.js" async></script>
+
+  <div id="disqus_thread"></div>
+
 </body>
 </html>
