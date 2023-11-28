@@ -21,10 +21,13 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(event) {
   event.target.setPlaybackQuality('hd720');
 }
+
 // Adicione ao seu arquivo de script (script.js)
 var overlay = document.getElementById('overlay');
+var disqusThread = document.getElementById('disqus_thread');
 
 function startVideo() {
   var videoWrapper = document.querySelector('.video-wrapper');
   videoWrapper.removeChild(overlay);
+  disqusThread.style.display = 'block'; // Garante que o Disqus seja exibido quando o vídeo inicia
 }
