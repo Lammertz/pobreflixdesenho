@@ -27,9 +27,15 @@
   <div class="footer">
     <p>&copy; 2023 Meu Cinema. Todos os direitos reservados. <a href="https://www.facebook.com/SuaPaginaDeAnuncios" target="_blank">Anuncie aqui</a></p>
   </div>
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <script src="script.js"></script>
-  <div id="disqus_thread" class="disqus-on-right"></div>
-  <script id="dsq-count-scr" src="//pobreflixdesenho.disqus.com/count.js" async></script>
+  <div id="disqus_thread" class="disqus-style"></div>
+  <script>
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://pobreflixdesenho.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </body>
 </html>
