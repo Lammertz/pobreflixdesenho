@@ -9,23 +9,42 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            display: flex; /* Adiciona display flex para organizar os itens na horizontal */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1; /* Garante que o título fique acima dos outros elementos */
         }
 
         .video-container {
-            flex: 1; /* Ocupa a maior parte da largura disponível */
+            flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            border: 2px solid #333; /* Adiciona uma borda */
+        }
+
+        iframe {
+            width: 600px; /* Aumenta a largura do vídeo */
+            height: 500px;
         }
 
         #disqus_thread {
             width: 300px;
             height: 450px;
-            background-color: #f1f1f1; /* Cor de fundo para destacar o Disqus */
+            background-color: #f1f1f1;
             padding: 10px;
             box-sizing: border-box;
+            margin: 10px;
         }
 
         .footer {
@@ -33,22 +52,26 @@
             color: #fff;
             text-align: center;
             padding: 10px;
+            width: 100%;
             position: fixed;
             bottom: 0;
-            width: 100%;
         }
     </style>
     <title>Pobreflix</title>
 </head>
 <body>
 
+    <div class="header">
+        <h1>Pobreflix24hrs</h1>
+    </div>
+
     <div class="video-container">
-        <iframe width="500" height="500" src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div id="disqus_thread"></div>
     <script>
-        (function() { // DON'T EDIT BELOW THIS LINE
+        (function() {
             var d = document, s = d.createElement('script');
             s.src = 'https://https-lammertz-github-io-pobreflixdesenho.disqus.com/embed.js';
             s.setAttribute('data-timestamp', +new Date());
